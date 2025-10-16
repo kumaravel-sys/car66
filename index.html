@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Open-World Car Simulator - Starter</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    html,body { height:100%; margin:0; overflow:hidden; background:#000; }
+    #ui { position: absolute; left:12px; top:12px; color:#fff; font-family: Inter, Arial; z-index:10; }
+    #loading { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); color:#fff; }
+    canvas { display:block; }
+  </style>
+</head>
+<body>
+  <div id="ui">
+    <div>W/A/S/D — drive & steer | Space — handbrake | C — camera | R — reset</div>
+    <div id="stats"></div>
+  </div>
+  <div id="loading">Loading assets…</div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
